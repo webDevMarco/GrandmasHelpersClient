@@ -1,0 +1,169 @@
+@media only screen and (max-width: 600px){
+
+#title-1200px{
+    display: none;
+}
+
+
+#title-600px{
+    display: block;
+    font-size: 60%;
+    padding-top: 40%;
+    width: 100%;
+    text-align: center;
+}
+.title-text{
+    padding-top: 5%;
+}
+/* BOXES */
+
+#items-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.items{
+    display: flex;
+    background-color: rgba(11, 163, 39, 0.083);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.items-names p{
+    font-size: 24px;
+    line-height: 200%;
+}
+
+   /*Form */
+
+   #contact-form-wrapper{
+       width: 100%;
+   }
+
+   #contact-form{
+       width: 200px;
+   }
+   
+.form-control{
+    width: 200px;
+}
+form input{
+    width: 50%;
+}
+
+
+textarea{
+    height: 150px;
+}
+
+}
+
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+
+    #title-1200px{
+        display: none;
+    }
+
+    #title-600px{
+        display: block;
+        font-size: 60%;
+        padding-top: 40%;
+        width: 100%;
+        text-align: center;
+    }
+
+.title-text{
+    padding-top: 5%;
+}
+
+
+/* BOXES */
+
+#items-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items{
+    display: flex;
+    background-color: rgba(11, 163, 39, 0.083);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.items-names p{
+    font-size: 24px;
+    line-height: 200%;
+}
+
+
+   /*Form */
+
+   #contact-form-wrapper{
+    width: 50%;
+}
+
+#contact-form{
+    width: 320px;
+}
+
+.form-control{
+ width: 300px;
+
+}
+form input{
+ width: 50%;
+}
+
+
+textarea{
+ height: 150px;
+}
+
+}
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    #title {color: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    #title {color: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    #title-1200px{
+        display: block;
+        width: 50%;
+        padding-top: 10%;
+    
+    }
+    #title-600px{
+        display: none;
+    
+    }
+
+    /* FORM */
+
+    #contact-form-wrapper{
+        width: 50%;
+    }
+
+}
