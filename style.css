@@ -13,7 +13,6 @@ header{
 
 }
 h1,h2{
-    text-align: center;
     background: rgba(43, 39, 39, 0.7);
     color: rgb(235, 225, 225);
 }
@@ -36,6 +35,9 @@ h2{
     padding-top: 10%;
 
 }
+.title-text{
+    padding-left: 20px;
+}
 
 #items-container{
     display: flex;
@@ -45,6 +47,7 @@ h2{
 
 .items{
     display: flex;
+    background-color: rgba(11, 163, 39, 0.083);
     align-items: center;
     justify-content: center;
     border: 1px solid black;
@@ -62,6 +65,105 @@ h2{
 text-align: center;
 }
 
-#information{
+.information-headers{
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 200%;
+    letter-spacing: 2px;
+}
+.information-headers ~ p, .details {
+    margin-top: 20px;
     text-align: center;
+    line-height: 200%;
+    letter-spacing: 1px;
+}
+
+.website-content{
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#donate{
+margin-top: 30px;
+cursor: pointer;
+height: 40px;
+border: 1px solid rgb(0, 0, 0);
+padding: 10px;
+border-radius: 4px;
+}
+
+
+/* Form */
+#contact-form-wrapper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px dashed black;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+#contact-form{
+    background-color: rgb(255, 255, 255);
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: rgb(2, 2, 2);
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+form .submit{
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    padding: 5px;
+}
+::placeholder{
+    padding-left: 10px;
+
+}
+form input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+
+/* Footer stuff */
+
+#footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr, 1, 2fr);
+    grid-template-rows: 1fr;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(20, 219, 57, 0.535);
+}
+
+#footer-name{
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    padding-left: 10px;
+}
+#footer-information{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column-start: 5;
+}
+#footer-email, #footer-phone{
+    margin-right: 20px;
 }
