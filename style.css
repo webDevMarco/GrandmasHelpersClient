@@ -8,9 +8,9 @@ body{
     font-family: 'Work Sans', sans-serif;}
 header{
     background-image: url('nature.jpg');
-    height: 100vh;
+    /* height: 100vh; */
     background-repeat: no-repeat;
-
+    height: 100vh;
 }
 h1,h2{
     background: rgba(43, 39, 39, 0.7);
@@ -30,11 +30,16 @@ h2{
     font-size: 200%;
 
 }
-#title{
+#title-1200px{
     width: 50%;
     padding-top: 10%;
 
 }
+#title-600px{
+    display: none;
+
+}
+
 .title-text{
     padding-left: 20px;
 }
@@ -65,6 +70,9 @@ h2{
 text-align: center;
 }
 
+.items-names p{
+    line-height: 200%;
+}
 .information-headers{
     margin-top: 40px;
     margin-bottom: 5px;
@@ -92,6 +100,10 @@ height: 40px;
 border: 1px solid rgb(0, 0, 0);
 padding: 10px;
 border-radius: 4px;
+}
+
+#donate:hover{
+    border: 3px solid black;
 }
 
 
@@ -144,26 +156,15 @@ form input{
 /* Footer stuff */
 
 #footer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr, 1, 2fr);
-    grid-template-rows: 1fr;
-    height: 50px;
+    color: rgb(235, 220, 220);
+    display: inline-block;
+    text-align: center;
+    line-height: 200%;
+    height: 100px;
     width: 100%;
-    background-color: rgba(20, 219, 57, 0.535);
+    background-color: rgb(38, 34, 34);
 }
 
-#footer-name{
-    display: flex;
-    align-items: center;
-    grid-column-start: 1;
-    padding-left: 10px;
-}
-#footer-information{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    grid-column-start: 5;
-}
 #footer-email, #footer-phone{
     margin-right: 20px;
 }
